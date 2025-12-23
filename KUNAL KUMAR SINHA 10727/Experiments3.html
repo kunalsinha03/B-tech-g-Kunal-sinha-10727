@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table Layout</title>
+</head>
+<body>
+
+    <h1>Weekly Class Schedule</h1>
+    <p>This table demonstrates a layout with merged cells and alignment.</p>
+
+    <table border="2px">
+        <caption>My Schedule</caption>
+        
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>9:00 AM</td>
+                <td colspan="2" style="text-align: center; background-color: #e0f7fa;">
+                    Physics (Lecture)
+                </td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td rowspan="2" style="vertical-align: middle; text-align: center;">
+                    Computer Science Lab
+                </td>
+                <td>Chemistry</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Chemistry</td>
+                <td>English</td>
+            </tr>
+            <tr>
+                <td>12:00 PM</td>
+                <td colspan="3" style="text-align: center; background-color: #fff9c4;">
+                    --- Lunch Break ---
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
