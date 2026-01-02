@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Arithmetic Operations</title>
+</head>
+<body>
+
+<h2>Basic Calculator</h2>
+
+Number 1: <input id="num1" type="number"><br><br>
+Number 2: <input id="num2" type="number"><br><br>
+
+<button onclick="add()">Add</button>
+<button onclick="sub()">Subtract</button>
+<button onclick="mul()">Multiply</button>
+<button onclick="divi()">Divide</button>
+
+<h3 id="result"></h3>
+
+<script>
+    function add() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        document.getElementById("result").innerText = "Result: " + (a + b);
+    }
+
+    function sub() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        document.getElementById("result").innerText = "Result: " + (a - b);
+    }
+
+    function mul() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        document.getElementById("result").innerText = "Result: " + (a * b);
+    }
+
+    function divi() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        document.getElementById("result").innerText = "Result: " + (a / b);
+    }
+</script>
+
+</body>
+</html>

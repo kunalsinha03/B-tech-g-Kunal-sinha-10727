@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="btn">Click Me</button>
+<button onclick="remove()">Remove Event</button>
+
+<script>
+  function showAlert() {
+    alert("Button Clicked!");
+  }
+
+  let button = document.getElementById("btn");
+
+  // addEventListener
+  button.addEventListener("click", showAlert);
+
+  // removeEventListener
+  function remove() {
+    button.removeEventListener("click", showAlert);
+    alert("Event Removed");
+  }
+</script>
+
+</body>
+</html>
